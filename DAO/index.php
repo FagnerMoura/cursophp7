@@ -3,9 +3,9 @@
 require_once("config.php");
 
 //carrega um registro
-$root = new Usuario();
+/*$root = new Usuario();
 $root->loadById(8);
-echo $root;
+echo $root;*/
 
 //carrega uma lista
 /*$lista = Usuario::getlist();
@@ -32,11 +32,17 @@ echo $aluno;*/
 //altera usuário existente - update
 
 /*$usuario = new Usuario();
-
 $usuario->loadById(11);
-
 $usuario->update("des", "23185");
 
 echo $usuario;*/
+
+//Deletar usuario
+
+$usuario = new Usuario();
+$usuario->loadById(5);
+$usuario->delete();
+echo $usuario;
+
 
 ?>
