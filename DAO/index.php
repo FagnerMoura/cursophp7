@@ -3,9 +3,9 @@
 require_once("config.php");
 
 //carrega um registro
-/*$root = new Usuario();
-$root->loadById(1);
-echo $root;*/
+$root = new Usuario();
+$root->loadById(8);
+echo $root;
 
 //carrega uma lista
 /*$lista = Usuario::getlist();
@@ -16,9 +16,27 @@ echo json_encode($lista);*/
 echo json_encode($search);*/
 
 //carrega um usuário usando o login e senha
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->login("Cris", "32152");
 
-echo $usuario;
+echo $usuario;*/
+
+//cria usuario novo
+
+/*$aluno = new Usuario();
+$aluno->setDeslogin("Phill");
+$aluno->setDessenha("142536++");
+$aluno->insert();
+echo $aluno;*/
+
+//altera usuário existente - update
+
+/*$usuario = new Usuario();
+
+$usuario->loadById(11);
+
+$usuario->update("des", "23185");
+
+echo $usuario;*/
 
 ?>
